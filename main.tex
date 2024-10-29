@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author: Israel Alcantara
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Israel Alcántara} \\ \vspace{1pt}
+    \small 201-744-7377 $|$ 
+    \href{iaa48@njit.edu}{\underline{iaa48@njit.edu}} $|$ 
+    \href{https://linkedin.com/in/israel-alcantara}{\underline{www.linkedin.com/in/israel-alcantara}} $|$
+    \href{https://github.com/iaalcantara17}{\underline{github.com/iaalcantara17} 
+    $|$
+    \href{https://iaalcantara17.github.io/portfolio-website/}{\underline{https://iaalcantara17.github.io/portfolio-website/}}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Bachelor of Science in Computer Science $|$ GPA: 3.425}{May 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Office Assistant}{Sept. 2024 -- Present}
+      {Educational Opportunity Program (EOP)}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Enhanced office operations and student engagement by efficiently managing front desk activities, coordinating over 15 appointments weekly using a scheduling website, and ensuring accurate and confidential record-keeping.}
+        \resumeItem{Streamlined document preparation, data entry, and office organization using Microsoft Office, boosting operational efficiency by at least 30\%.}
+        
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Delivery Technician/Lab Technician}{Sept. 2022 -- Present}
+      {Media and Technology Support Services (MTSS)}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team of five to standardize audiovisual equipment setups and implement routine maintenance protocols, boosting reliability by 40\% across more than 100 lectures annually.}
+        \resumeItem{Effectively diagnosed and resolved technical issues in classrooms and labs, utilizing systematic troubleshooting techniques to identify problems and implement solutions, leading to a 30\% reduction in equipment downtime.}
+    \resumeItemListEnd
+
+\resumeSubheading
+      {Event Coordination Director}{Sept. 2024 -- Present}
+      {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Led the planning and execution of 12+ networking and professional development events using Google Sheets and volunteer coordination websites and forms, increasing participation by 50\% and reducing planning time by 20\%.}
+        \resumeItem{Developed strategic event calendars and managed volunteer teams to execute events efficiently, resulting in a 20\% reduction in planning time and increased attendee satisfaction.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Lexical Analyzer for SFort95 Language} $|$ \emph{Visual Studio Code, Git} $|$ \textbf{C++}} {March 2024}
+          \resumeItemListStart
+            \resumeItem{Implemented state-based transitions to recognize multi-character tokens like identifiers and constants.}
+            \resumeItem{Error detection and reporting for unrecognized lexemes using error states.}
+            \resumeItem{Supported various language-specific constructs such as comments and string literals}
+            \resumeItem{Produced detailed token reports including frequency and types of tokens identified.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Recursive-Descent Parser for SFort95 Language} $|$ \emph{Visual Studio Code, Git} $|$ \textbf{C++}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Implemented functions for each syntactic rule, supporting constructs like variable declarations, assignment statements, and control structures (IF, PRINT).}
+            \resumeItem{Managed error reporting with descriptive messages for common syntax errors such as missing semicolons or undefined variables.}
+            \resumeItem{Integrated operator precedence handling, including unary and binary operations with correct associativity rules.}
+            \resumeItem{Parsed and validated expressions, ensuring type compatibility between operands.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Interpreter for SFort95 Language} $|$ \emph{Visual Studio Code, Git} $|$ \textbf{C++}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Built a symbol table to track variable types and values, ensuring correct type conversions and assignments.}
+            \resumeItem{Evaluated arithmetic and relational expressions, applying precedence and associativity rules.}
+            \resumeItem{Implemented run-time checks for error handling, including division by zero and type mismatches.}
+            \resumeItem{Managed control flow with support for conditional statements and block execution.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Key Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Relevant Coursework}{: Roadmap to Computing $|$  Intro to Computer Science I $|$ Data Structures \& Algorithms in Java $|$ Programming Language Concepts $|$ Information Design Techniques $|$ Foundation of Computer Science I $|$ Intensive Programming in Linux $|$ Introduction to Data Science $|$ Probability \& Statistics} \\
+     \textbf{Programming Languages}{: Python, Java, C/C++, C\#, Bash, HTML, JavaScript, CSS} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib}\\
+     \textbf{Languages}{: Fluent in English and Spanish} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
