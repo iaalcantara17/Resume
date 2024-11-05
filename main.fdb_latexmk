@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730177736.37795 "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" "main.pdf" "main" 1730177737.26437 0
+["pdflatex"] 1730785219.36222 "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" "main.pdf" "main" 1730785220.78913 0
   "C:/Users/ialca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730177735 80937 91001db6d4ae332437b4b739862cda02 ""
   "C:/Users/ialca/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730177682 11948316 8abb346a38116dd176228b3f1289baf3 ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -80,12 +80,11 @@
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1718356376 14067 1383bd6ee23ab18ae0e796155404deb7 ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1718356376 7243 e5dac1240636811edb77568b81818372 ""
-  "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1718356376 7532 d2e1111e17bfebb1607d8ffa779705ec ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" 1730190496 9280 bac9c3dbf0c1420a99ad1ed8b45a273c ""
-  "main.aux" 1730177737 705 00e8e2d8bdf1755336e2278eed667155 "pdflatex"
-  "main.out" 1730177737 360 6f9ac08effba2d3005220aed557ba916 "pdflatex"
-  "main.tex" 1730190496 9280 bac9c3dbf0c1420a99ad1ed8b45a273c ""
+  "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" 1730785216 7926 9e87dc7b0dab241f7f6afdd44f0cbf29 ""
+  "main.aux" 1730785220 705 00e8e2d8bdf1755336e2278eed667155 "pdflatex"
+  "main.out" 1730785220 360 6f9ac08effba2d3005220aed557ba916 "pdflatex"
+  "main.tex" 1730785216 7926 9e87dc7b0dab241f7f6afdd44f0cbf29 ""
   (generated)
   "main.aux"
   "main.log"
