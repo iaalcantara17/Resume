@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1734249579.00826 "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" "main.pdf" "main" 1734249579.84049 0
+["pdflatex"] 1742914325.52221 "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" "main.pdf" "main" 1742914326.3862 0
   "C:/Users/ialca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730177735 80937 91001db6d4ae332437b4b739862cda02 ""
   "C:/Users/ialca/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730177682 11948316 8abb346a38116dd176228b3f1289baf3 ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -81,10 +81,10 @@
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1718356376 14067 1383bd6ee23ab18ae0e796155404deb7 ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1718356376 7243 e5dac1240636811edb77568b81818372 ""
   "C:/Users/ialca/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" 1734249578 7954 4d16298e762e79c3370f516e0e0704b7 ""
-  "main.aux" 1734249579 705 00e8e2d8bdf1755336e2278eed667155 "pdflatex"
-  "main.out" 1734249579 360 6f9ac08effba2d3005220aed557ba916 "pdflatex"
-  "main.tex" 1734249578 7954 4d16298e762e79c3370f516e0e0704b7 ""
+  "c:/Users/ialca/OneDrive/Documents/Projects/Resume Israel Alcantara/main.tex" 1742914321 8042 7db5c088df34735ac47998e4f1d37c1f ""
+  "main.aux" 1742914326 705 91965a0f76b738b251fabbae8b042d48 "pdflatex"
+  "main.out" 1742914326 360 4950f703631d2c124c2d713efa8e4a67 "pdflatex"
+  "main.tex" 1742914321 8042 7db5c088df34735ac47998e4f1d37c1f ""
   (generated)
   "main.aux"
   "main.log"
