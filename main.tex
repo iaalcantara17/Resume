@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in LaTeX
-% Author: Israel Alcantara
+% Author: Israel Alcántara
 % Based off of: https://github.com/sb2nov/resume
 % License: MIT
 %------------------------
@@ -16,9 +16,11 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+\IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}}{}  % avoid compile error if file is missing
 
 \pagestyle{fancy}
+\setlength{\footskip}{6pt}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -88,9 +90,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {New Jersey Institute of Technology – Ying Wu College of Computing}{Newark, NJ}
-      {Bachelor of Science in Computer Science $|$ GPA: 3.505}{May 2026}
+      {Bachelor of Science in Computer Science $|$ GPA: 3.5}{May 2026}
       \begin{flushleft}
-        \small \textbf{Relevant Coursework}: Data Structures \& Algorithms $|$ Programming Language Concepts $|$ Information Design Techniques $|$ Designing the User Experience $|$ Foundation of Computer Science I $|$ Intensive Programming in Linux $|$ Introduction to Data Science $|$ Database System Design \& Management $|$ Principles of Operating Systems $|$ Introduction to Computer Networks $|$ Probability \& Statistics
+        \small \textbf{Relevant Coursework}: Data Structures \& Algorithms $|$ Programming Language Concepts $|$ Intensive Programming in Linux $|$ Data Science $|$ Database System Design \& Management $|$ Operating Systems $|$ Computer Networks $|$ Probability \& Statistics
       \end{flushleft}
   \resumeSubHeadingListEnd
 
@@ -98,56 +100,61 @@
 \section{Key Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Programming Languages}{: Python, Java, C/C++, Bash Script, HTML, JavaScript, CSS, SQL} \\
-      \textbf{Frameworks \& Tools}{: Linux, Git, Google Colab, VS Code, Vim, IntelliJ, Eclipse, Node.js, MySQL, MongoDB, LaTeX} \\
+      \textbf{Programming Languages}{: Python, Java, C/C++, Bash, HTML, JavaScript, CSS, SQL} \\
+      \textbf{Frameworks \& Tools}{: Linux, Git, Google Colab, VS Code, Vim, IntelliJ, Eclipse, Node.js, MySQL, MongoDB, LaTeX, AWS (CloudWatch), JUnit, XML} \\
       \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Scikit-learn, Plotly, Dash, Seaborn} \\
-      \textbf{Languages}{: Fluent in English and Spanish} \\
+      \textbf{Spoken Languages}{: Fluent in English and Spanish} \\
     }}
 \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
+    % AWS (most recent end date)
     \resumeSubheading
-      {Office Assistant}{Sept. 2024 -- Present}
-      {Educational Opportunity Program (EOP) - NJIT}{Newark, NJ}
+      {Software Development Engineer Intern}{May 2025--Aug. 2025}
+      {Amazon Web Services (AWS) — Amazon Dedicated Cloud (ADC), BlackMirror}{Arlington, VA}
       \resumeItemListStart
-        \resumeItem{Spearheaded office operations and student engagement by efficiently managing front desk activities, coordinating over 15 appointments weekly using a scheduling website, and ensuring accurate and confidential record-keeping.}
-        \resumeItem{Streamlined document preparation and data entry workflows in Microsoft Excel, reducing administrative workload by 30\% and improving office organization for faster document retrieval.}
+        \resumeItem{Shipped \textbf{lossless consecutive-duplicate datapoint compression} for BlackMirror’s ADC to \textbf{commercial metrics pipeline} (\textbf{Java}, \textbf{XML}); added a \texttt{duplicates} field, integrated the decompressor and error handling, and added \textbf{30+} unit tests.}
+        \resumeItem{\textbf{Reduced metric payload volume up to 60 GB/day} (avg \textbf{38 GB/day}) across \textbf{3} regions by collapsing runs of identical datapoints while preserving exact reconstruction, with up to \textbf{100M} compressible consecutive duplicates per region daily.}
+        \resumeItem{Built \textbf{CloudWatch} observability: emitted \textbf{13} custom metrics from Java and published \textbf{1} cross-region dashboard (pre-production and production) to size opportunity and guide design; documented \textbf{delta} and \textbf{sum-only} follow-ups.}
       \resumeItemListEnd
 
+    % MTSS (ongoing; present tense)
     \resumeSubheading
-      {Delivery Technician/Lab Technician}{Sept. 2022 -- Present}
+      {Delivery Technician/Lab Technician}{Sept. 2022--Present}
       {Media and Technology Support Services (MTSS) - NJIT}{Newark, NJ}
       \resumeItemListStart
-        \resumeItem{Collaborated with a team of five to standardize audiovisual equipment setup procedures and implement routine maintenance protocols, boosting equipment reliability by 40\% across more than 100 lectures annually.}
-        \resumeItem{Diagnosed and resolved technical issues in classrooms and labs, utilizing systematic troubleshooting techniques to identify problems and implement solutions, leading to a 30\% reduction in equipment downtime.}
+        \resumeItem{\textbf{Collaborate} with a team of five to standardize audiovisual equipment setup procedures and implement routine maintenance protocols, boosting equipment reliability by \textbf{40\%} across more than \textbf{100} lectures annually.}
+        \resumeItem{\textbf{Diagnose and resolve} technical issues in classrooms and labs using \textbf{systematic troubleshooting}, leading to a \textbf{30\%} reduction in \textbf{equipment downtime}.}
       \resumeItemListEnd
-      
+
+    % SHPE
     \resumeSubheading
-      {Event Coordination Director}{May 2024 -- May 2025}
+      {Event Coordination Director}{May 2024--May 2025}
       {Society of Hispanic Professional Engineers (SHPE) - NJIT}{Newark, NJ}
       \resumeItemListStart
-        \resumeItem{Organized and executed 12+ networking and professional development events using Google Sheets and the school's volunteer coordination platforms, increasing participation by 50\% and reducing planning time by 20\%.}
-        \resumeItem{Created strategic event calendars and managed volunteer teams of approx. 10 people to execute events efficiently, resulting in a 20\% reduction in planning time and increased attendee satisfaction.}
+        \resumeItem{\textbf{Organized and executed} \textbf{12+} networking and professional development events, increasing participation by \textbf{50\%} and reducing planning time by \textbf{20\%}.}
+        \resumeItem{\textbf{Coordinated} end-to-end logistics (room bookings, vendor scheduling, and audio-visual (AV)) and maintained checklists/runbooks to guide a team of about \textbf{10} volunteers.}
       \resumeItemListEnd
-      
+
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Data Analysis and Prediction App} $|$ \emph{Streamlit, Python, Scikit-learn} $|$ Jupyter Notebook} {Nov. 2024 – Dec. 2024}
+          {\textbf{Data Analysis and Prediction App} $|$ \emph{Streamlit, Python, Scikit-learn} $|$ Jupyter Notebook} {Nov. 2024--Dec. 2024}
           \resumeItemListStart
-            \resumeItem{Developed an interactive web app for CSV data upload, visualization, and machine learning model training using a Gradient Boosting Regressor, featuring dynamic charts for real-time insights.}
-            \resumeItem{Built automated data preprocessing that handles missing values, scales numerical data, and encodes categories, allowing users to select features and evaluate model predictions in real time.}
+            \resumeItem{\textbf{Developed} an \textbf{interactive web app} for CSV data upload, visualization, and machine learning model training using a \textbf{Gradient Boosting Regressor}, featuring dynamic charts for \textbf{real-time insights}.}
+            \resumeItem{\textbf{Built} \textbf{automated data preprocessing} that handles missing values, scales numerical data, and encodes categories, allowing users to select features and evaluate model predictions in real time.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Compiler for SFort95 Language} $|$ \emph{Visual Studio Code, Git} $|$ C++} {March 2024 – April 2024}
+          {\textbf{Compiler for SFort95 Language} $|$ \emph{Visual Studio Code, Git} $|$ C++} {Mar. 2024--Apr. 2024}
           \resumeItemListStart
-            \resumeItem{Developed a full SFort95 compiler with lexical analysis, recursive-descent parsing, and interpretation, ensuring compliance with Fortran95 standards and robust syntax validation.}
-            \resumeItem{Designed and implemented a state-based lexical analyzer, operator-precedence parsing, and runtime checks, generating token reports and handling errors like undefined variables and division by zero.}
+            \resumeItem{\textbf{Developed} a full \textbf{SFort95 compiler} with \textbf{lexical analysis}, \textbf{recursive-descent parsing}, and interpretation, ensuring compliance with Fortran95 standards and robust syntax validation.}
+            \resumeItem{\textbf{Designed and implemented} a \textbf{state-based lexical analyzer}, \textbf{operator-precedence parsing}, and \textbf{runtime checks}, generating token reports and handling errors like undefined variables and division by zero.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
