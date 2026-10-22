@@ -5,7 +5,7 @@ LaTeX source for my resume.
 ## Versions
 
 - `main.tex` is my main resume. It builds to `main.pdf`.
-- `resume-pm-it.tex` has the same content in a different order, aimed at technical project management, project management, and IT roles. It builds to `resume-pm-it.pdf`.
+- `resume-pm-it.tex` has the same content in a different order, aimed at technical project management, project management, and IT roles. It isn't built to PDF yet because it runs to two pages.
 
 ## How to build
 
