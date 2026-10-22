@@ -81,9 +81,9 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Israel Alcántara} \\ \vspace{2pt}
-    \small Newark, NJ $|$ REDACTED $|$
-    \href{mailto:iaa48@njit.edu}{\underline{iaa48@njit.edu}} $|$
+    \textbf{\Huge \scshape Israel Alcantara} \\ \vspace{2pt}
+    \small Newark, NJ $|$ \IfFileExists{phone.tex}{\input{phone.tex} $|$}{}
+    \href{mailto:ialcantara2003@gmail.com}{\underline{ialcantara2003@gmail.com}} $|$
     \href{https://linkedin.com/in/israel-alcantara}{\underline{linkedin.com/in/israel-alcantara}} $|$
     \href{https://github.com/iaalcantara17}{\underline{github.com/iaalcantara17}} $|$
     \href{https://israelalcantara.vercel.app/}{\underline{israelalcantara.vercel.app}}
@@ -93,13 +93,18 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Montclair State University -- Feliciano School of Business}{Montclair, NJ}
+      {Master of Business Administration}{Expected Fall 2028}
+      \begin{flushleft}
+        \small \textbf{Relevant Coursework}: Global Economics, Business Statistics, Strategic Information Systems, Business Essentials
+      \end{flushleft}
+    \resumeSubheading
       {New Jersey Institute of Technology -- Ying Wu College of Computing}{Newark, NJ}
       {Bachelor of Science in Computer Science $|$ GPA: 3.4}{May 2026}
       \begin{flushleft}
         \small \textbf{Relevant Coursework}: Operating Systems, Computer Networks, Database System Design, Intensive Programming in Linux, Intro to Cybersecurity, Intro to Machine Learning \\
-        \small \textbf{Honors}: Dean's List (multiple semesters); Theodore \& Lois John, Guastaferro Memorial, and Orsted Opportunity Scholarships \\
-        \small \textbf{Affiliations}: ColorStack Fellow; Hispanic Association for Computing \& Computer Sciences (HACCS); Society of Hispanic Professional Engineers (SHPE) \\
-        \small \textbf{Languages}: Fluent in English and Spanish
+        \small \textbf{Honors}: Cum Laude; Dean's List (multiple semesters); Theodore \& Lois John, Guastaferro Memorial, and Orsted Opportunity Scholarships \\
+        \small \textbf{Affiliations}: ColorStack Fellow; Hispanic Association for Computing \& Computer Sciences (HACCS); Society of Hispanic Professional Engineers (SHPE); Association of Latino Professionals For America (ALPFA) $|$ \textbf{Languages}: Fluent in English and Spanish
       \end{flushleft}
   \resumeSubHeadingListEnd
 
@@ -107,7 +112,7 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: Java, Python, C/C++, Bash/Shell, SQL, JavaScript, TypeScript, HTML, CSS} \\
+      \textbf{Languages}{: Java, Python, C/C++, Bash/Shell, SQL, JavaScript, TypeScript, HTML, CSS, Kotlin} \\
       \textbf{Cloud \& DevOps}{: AWS (CloudWatch), Linux, Git, XML, JUnit} \\
       \textbf{Databases \& Data}{: Supabase (Postgres, Realtime, Auth), MySQL, MongoDB, Pandas, NumPy, Scikit-learn, Matplotlib, Plotly, Seaborn} \\
       \textbf{Tools \& Methodologies}{: Jira, Node.js, Express, Agile/Scrum, REST APIs}
@@ -124,14 +129,14 @@
       {Amazon Web Services (AWS) -- Amazon Dedicated Cloud (ADC), BlackMirror}{Arlington, VA}
       \resumeItemListStart
         \resumeItem{Shipped a lossless consecutive-duplicate datapoint compression algorithm into the BlackMirror commercial metrics pipeline (Java, XML), modifying a \textbf{shared ADC-wide XML schema} to add a \texttt{duplicates} field and delivering a matching decompressor that guarantees exact reconstruction.}
-        \resumeItem{Reduced metric export payloads by \textbf{up to 60 GB/day} (avg 38 GB/day) across \textbf{3 air-gapped regions}, collapsing up to 100M consecutive duplicate datapoints per region daily while preserving min/max/avg/sum/sample-count fidelity.}
+        \resumeItem{Reduced metric export payloads by an average of \textbf{38 GB per day}, and by up to \textbf{60 GB per day}, across \textbf{3 air-gapped regions}, collapsing up to 100M consecutive duplicate datapoints per region daily while preserving min/max/avg/sum/sample-count fidelity.}
         \resumeItem{Instrumented the compression path with 13 custom CloudWatch metrics (compression-opportunity flags, bytes saved, duplicate run length, per-metric-type stats) and published a cross-region dashboard used by the wider team to size impact.}
         \resumeItem{Authored 30+ JUnit tests covering round-trip correctness, edge cases, and error handling; scoped delta-encoding and sum-only compression as follow-on roadmap items for future quarters.}
       \resumeItemListEnd
 
     % Community Assistant
     \resumeExperience
-      {Community Assistant, Office of Residential Life}{June 2025 -- Present}
+      {Community Assistant, Office of Residential Life}{June 2025 -- May 2026}
       {New Jersey Institute of Technology}{Newark, NJ}
       \resumeItemListStart
         \resumeItem{Supervise a \textbf{400-resident Greek Village complex} across multiple buildings; enforce university housing policy, conduct regular rounds, and author formal incident reports for the Office of Residential Life.}
@@ -140,7 +145,7 @@
 
     % MTSS
     \resumeExperience
-      {Delivery Technician \& Lab Technician}{Sept. 2022 -- Present}
+      {Delivery Technician \& Lab Technician}{Sept. 2022 -- May 2026}
       {Media and Technology Support Services (MTSS), NJIT}{Newark, NJ}
       \resumeItemListStart
         \resumeItem{Troubleshoot classroom and lab AV systems end-to-end (projectors, Crestron control systems, AV switchers, wireless microphones and transmitters, classroom network connectivity) across \textbf{100+ lectures annually}; systematic diagnosis cut repeat-call rate on the same equipment by an estimated 30\%.}
@@ -162,10 +167,10 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{LinkdUp} $|$ \emph{React Native, TypeScript, Node.js, Supabase Postgres, Railway, Vercel} $|$ \href{https://linkdup.app}{\underline{linkdup.app}}}{Feb. 2026 -- May 2026}
+          {\textbf{LinkdUp} $|$ \emph{React Native, TypeScript, Node.js, Supabase Postgres, Render, Vercel} $|$ \href{https://linkdup.app}{\underline{linkdup.app}}}{Feb. 2026 -- May 2026}
           \resumeItemListStart
-            \resumeItem{Architected and shipped a production mobile-first web app for group meetup coordination as \textbf{lead developer} for the NJIT CS491 senior capstone; deployed live at linkdup.app with Google OAuth, Supabase Postgres (27+ schema migrations, row-level security), and Supabase Realtime websockets powering a locked-step swipe-voting engine synchronized across all party members.}
-            \resumeItem{Integrated Google Places API for geographic midpoint venue discovery, Google Calendar API for one-click event export, and Gemini 2.5 for AI-generated venue pitches; built a TikTok-style social feed, followers/block system, and collaborative date-voting flow across a full Expo/React Native Web frontend, Express/Node backend, and Railway + Vercel deployment pipeline.}
+            \resumeItem{Shipped a production mobile-first web app for group meetup coordination as \textbf{backend engineer} on a five-person team for the NJIT CS/IT 491 senior capstone, placing 2nd overall; deployed live at linkdup.app with Google OAuth, Supabase Postgres (27+ schema migrations, row-level security), and Supabase Realtime websockets powering a locked-step swipe-voting engine synchronized across all party members.}
+            \resumeItem{Integrated Google Places API for geographic midpoint venue discovery and Google Calendar API for one-click event export; the app also has a TikTok-style social feed, a followers/block system, and collaborative date voting, with an Expo/React Native Web frontend, an Express/Node backend on Render, and the web app on Vercel.}
           \resumeItemListEnd
 
       \resumeProjectHeading
