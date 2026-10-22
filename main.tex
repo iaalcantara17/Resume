@@ -8,7 +8,7 @@
 \documentclass[letterpaper,10pt]{article}
 
 % Layout: tight margins to preserve all content on one page
-\usepackage[margin=0.25in]{geometry}
+\usepackage[margin=0.2in]{geometry}
 
 \usepackage{latexsym}
 \usepackage{titlesec}
@@ -82,7 +82,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Israel Alcantara} \\ \vspace{2pt}
-    \small Newark, NJ $|$ \IfFileExists{phone.tex}{\input{phone.tex} $|$}{}
+    \small Newark, NJ\IfFileExists{phone.tex}{\input{phone.tex}}{} $|$
     \href{mailto:ialcantara2003@gmail.com}{\underline{ialcantara2003@gmail.com}} $|$
     \href{https://linkedin.com/in/israel-alcantara}{\underline{linkedin.com/in/israel-alcantara}} $|$
     \href{https://github.com/iaalcantara17}{\underline{github.com/iaalcantara17}} $|$
@@ -95,9 +95,7 @@
     \resumeSubheading
       {Montclair State University -- Feliciano School of Business}{Montclair, NJ}
       {Master of Business Administration}{Expected Fall 2028}
-      \begin{flushleft}
-        \small \textbf{Relevant Coursework}: Global Economics, Business Statistics, Strategic Information Systems, Business Essentials
-      \end{flushleft}
+      \vspace{2pt}\item[] \small \textbf{Relevant Coursework}: Global Economy, Business Statistics, Strategic Information Systems, Business Essentials
     \resumeSubheading
       {New Jersey Institute of Technology -- Ying Wu College of Computing}{Newark, NJ}
       {Bachelor of Science in Computer Science $|$ GPA: 3.4}{May 2026}
@@ -129,7 +127,7 @@
       {Amazon Web Services (AWS) -- Amazon Dedicated Cloud (ADC), BlackMirror}{Arlington, VA}
       \resumeItemListStart
         \resumeItem{Shipped a lossless consecutive-duplicate datapoint compression algorithm into the BlackMirror commercial metrics pipeline (Java, XML), modifying a \textbf{shared ADC-wide XML schema} to add a \texttt{duplicates} field and delivering a matching decompressor that guarantees exact reconstruction.}
-        \resumeItem{Reduced metric export payloads by an average of \textbf{38 GB per day}, and by up to \textbf{60 GB per day}, across \textbf{3 air-gapped regions}, collapsing up to 100M consecutive duplicate datapoints per region daily while preserving min/max/avg/sum/sample-count fidelity.}
+        \resumeItem{Reduced metric export payloads by \textbf{up to 60 GB/day} (avg 38 GB/day) across \textbf{3 air-gapped regions}, collapsing up to 100M consecutive duplicate datapoints per region daily while preserving min/max/avg/sum/sample-count fidelity.}
         \resumeItem{Instrumented the compression path with 13 custom CloudWatch metrics (compression-opportunity flags, bytes saved, duplicate run length, per-metric-type stats) and published a cross-region dashboard used by the wider team to size impact.}
         \resumeItem{Authored 30+ JUnit tests covering round-trip correctness, edge cases, and error handling; scoped delta-encoding and sum-only compression as follow-on roadmap items for future quarters.}
       \resumeItemListEnd
@@ -169,8 +167,8 @@
       \resumeProjectHeading
           {\textbf{LinkdUp} $|$ \emph{React Native, TypeScript, Node.js, Supabase Postgres, Render, Vercel} $|$ \href{https://linkdup.app}{\underline{linkdup.app}}}{Feb. 2026 -- May 2026}
           \resumeItemListStart
-            \resumeItem{Shipped a production mobile-first web app for group meetup coordination as \textbf{backend engineer} on a five-person team for the NJIT CS/IT 491 senior capstone, placing 2nd overall; deployed live at linkdup.app with Google OAuth, Supabase Postgres (27+ schema migrations, row-level security), and Supabase Realtime websockets powering a locked-step swipe-voting engine synchronized across all party members.}
-            \resumeItem{Integrated Google Places API for geographic midpoint venue discovery and Google Calendar API for one-click event export; the app also has a TikTok-style social feed, a followers/block system, and collaborative date voting, with an Expo/React Native Web frontend, an Express/Node backend on Render, and the web app on Vercel.}
+            \resumeItem{Shipped a production mobile-first web app for group meetup coordination as \textbf{backend engineer on a five-person team} for the NJIT CS491 senior capstone, \textbf{placing 2nd overall}; deployed live with Google OAuth, Supabase Postgres (27+ schema migrations, row-level security), and Supabase Realtime websockets powering a locked-step swipe-voting engine synchronized across all party members.}
+            \resumeItem{Integrated Google Places API for geographic midpoint venue discovery and Google Calendar API for one-click event export; built a TikTok-style social feed, followers/block system, and collaborative date-voting flow across a full Expo/React Native Web frontend, Express/Node backend, and Render + Vercel deployment pipeline.}
           \resumeItemListEnd
 
       \resumeProjectHeading
