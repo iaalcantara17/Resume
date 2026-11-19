@@ -1,0 +1,269 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Israel Alcantara
+% Based off of: https://github.com/sb2nov/resume (Jake Gutierrez template)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = *}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{6pt}{9pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeFirstLine}[1]{\vspace{3pt}\item[]\small{#1}}
+\newcommand{\resumeLine}[1]{\vspace{-1pt}\item[]\small{#1}}
+\newcommand{\resumeSchoolGap}{\vspace{3pt}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=6pt,itemsep=0pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Israel Alcantara} \\ \vspace{1pt}
+    \small Newark, NJ\IfFileExists{phone.tex}{\input{phone.tex}\unskip}{} $|$ \href{mailto:ialcantara2003@gmail.com}{\underline{ialcantara2003@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/israel-alcantara}{\underline{linkedin.com/in/israel-alcantara}} \\
+    \href{https://github.com/iaalcantara17}{\underline{github.com/iaalcantara17}} $|$
+    \href{https://israelalcantara.vercel.app}{\underline{israelalcantara.vercel.app}}
+\end{center}
+\vspace{-8pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Montclair State University}{Montclair, NJ}
+      {Master of Business Administration $|$ Feliciano School of Business $|$ GPA: 4.0}{Aug 2026 -- Expected Dec 2028}
+      \resumeFirstLine{\textbf{Coursework}: Business Essentials (MGMT 560), Business Statistics (INFO 561), Global Economy (ECON 565), Strategic Information Systems (INFO 565)}
+    \resumeSchoolGap
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Bachelor of Science in Computer Science $|$ Ying Wu College of Computing $|$ GPA: 3.4}{Sep 2022 -- May 2026}
+      \resumeFirstLine{\textbf{Coursework}: Roadmap to Computing (CS 100), Introduction to Computer Science (CS 113), Introduction to Computer Science II, Data Structures and Algorithms (CS 114), Foundations of Computer Science I, Discrete Math (CS 241), Programming Language Concepts (CS 280), Intensive Programming in Linux (CS 288), Introduction to Data Science (CS 301), Database System Design and Management (CS 331), Principles of Operating Systems (CS 332), Performance Modeling in Computing (CS 337), Foundations of Computer Science II, Discrete Math (CS 341), Intro to Computer Systems (CS 350), Introduction to Cybersecurity (CS 351), Introduction to Computer Networks (CS 356), Intro to Machine Learning (CS 375), Android Application Development (CS 388), Advanced Data Structures and Algorithms (CS 435), Design in Software Engineering (CS 490), Computer Science Project, Senior Capstone (CS 491), Designing the User Experience (IS 247), Information Design Techniques (IT 201), Calculus II (MATH 112), Probability and Statistics (MATH 333)}
+      \resumeLine{\textbf{Honors}: Cum Laude (May 2026), Dean's List (Fall 2022, Spring 2024, Spring 2025, Spring 2026)}
+      \resumeLine{\textbf{Scholarships}: Orsted Opportunity Scholarship (Sep 2022), Highlander Persistence Scholarship and NJIT Urban Scholarship (Sep 2023), Dr. Theodore and Lois John Scholarship, General Endowed Scholarship, Guastaferro Memorial Endowed Scholarship, and Hispanic and Latinx Leadership Council Opportunity Scholarship (Sep 2024)}
+      \resumeLine{\textbf{Activities}: SHPE Event Coordination Director, Fashion Club Treasurer, HACCS, ACM, ALPFA}
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Project \& Business}{: Project Management, Project Coordination, Agile/Scrum, Jira, Event Planning, Budgeting, Microsoft Excel, Microsoft Office} \\
+      \textbf{Cloud \& IT}{: AWS (CloudWatch), Technical Support, Troubleshooting, Linux, Git, AV Systems (Crestron)} \\
+      \textbf{Programming}{: Java, Python, SQL, JavaScript, TypeScript, C/C++, Kotlin, Bash} \\
+      \textbf{Frameworks \& Data}{: React, React Native, Node.js, Express, Supabase (Postgres), MySQL, MongoDB, Pandas, Scikit-learn, Streamlit, JUnit, Playwright} \\
+      \textbf{Languages}{: English and Spanish (native or bilingual)}
+    }}
+\end{itemize}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Best Buy}{Secaucus, NJ}
+      {Geek Squad Agent}{Nov 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Serve as the first point of contact for customers' computer, phone, and device issues, handling check-in and checkout with detailed notes and repair time estimates.}
+        \resumeItem{Set up new devices, advise customers on whether to repair or replace, and keep them updated on service-queue status.}
+        \resumeItem{Partner with other agents on complex repairs and complete Best Buy's certified training courses.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Amerivents (US Open 2026)}{Flushing, NY}
+      {Suite Runner}{Aug 2026 -- Sep 2026}
+      \resumeItemListStart
+        \resumeItem{Delivered food, drinks, and guest requests to premium suites during the 2026 US Open, keeping turnaround fast in a high-volume setting.}
+        \resumeItem{Worked directly with suite guests and kitchen and service staff to fill orders accurately and resolve requests in real time.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Event Aces (FIFA World Cup 2026)}{East Rutherford, NJ}
+      {Beertender \& Suite Runner}{Jun 2026 -- Jul 2026}
+      \resumeItemListStart
+        \resumeItem{Started as a beertender, serving high volumes of guests during FIFA World Cup 2026 game days at MetLife Stadium while staying accurate and friendly under pressure.}
+        \resumeItem{Moved into a suite runner role once MetLife's own staff covered beertending, restocking bars with regular and alcoholic beverages, ice, and garnishes whenever supplies ran low.}
+        \resumeItem{Handled teardown and restocking after each shift, putting every item back in its original spot so drinks stayed cold and the area was left as clean as I found it.}
+        \resumeItem{Worked with a large event staff team to keep service lines moving during peak crowds.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Amazon Web Services (AWS)}{Arlington, VA}
+      {Software Development Engineer Intern}{May 2025 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Instrumented Java emitters with 13 custom CloudWatch metrics to measure how much metric data in private, air-gapped regions could be compressed, then used the dashboards to choose the approach.}
+        \resumeItem{Designed and shipped a lossless consecutive-duplicate compression algorithm for the Amazon Dedicated Cloud BlackMirror metrics pipeline (Java, XML), cutting export payloads by an average of 38 GB a day and up to 60 GB a day across 3 air-gapped regions while meeting customers' privacy concerns.}
+        \resumeItem{Built a matching decompressor that restores every data point exactly, and wrote 30+ JUnit tests for round-trip correctness and edge cases.}
+        \resumeItem{Published a cross-region dashboard the wider team used to size the impact, and scoped delta encoding and sum-only compression as follow-on roadmap items.}
+        \resumeItem{Took part in the team's daily standups.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Adamas Building Services}{Long Branch, NJ}
+      {Beach Attendant \& Lifeguard}{Jul 2023 -- Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Monitored three condominium pools, enforced safety rules, ran chemical checks three times a day, and gave CPR and first aid when needed, watching over about 80 swimmers per shift and closing the season with zero accidents.}
+        \resumeItem{Coordinated the daily setup and teardown of 150+ chairs, umbrellas, and water-sport items, and worked with facilities to keep a 95\% cleanliness rating and raise guest-satisfaction feedback by 45\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Leadership \& Campus Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Community Assistant, Office of Residential Life}{Jun 2025 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Supervised a 400-resident Greek Village complex, ran regular rounds, enforced housing policy, and resolved roommate and conduct issues, with zero major violations during my term.}
+        \resumeItem{Planned and ran all 8 to 12 community events for my building each semester, about 2 to 3 a month, from wellness workshops to study groups, on a \$150 semester budget.}
+        \resumeItem{Served as primary responder to a late-night guest-policy incident across two buildings, working with a graduate CA, a peer CA, and the on-duty Residence Coordinator to de-escalate it and enforce a building-wide no-entry directive.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Media and Technology Support Services (MTSS), NJIT}{Newark, NJ}
+      {Delivery Technician \& Lab Technician}{Sep 2022 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Worked with a team of five technicians to standardize equipment setup and pre-lecture readiness checks across 100+ lectures a year, improving estimated equipment reliability by 40\%, based on daily, weekly, and monthly service-call logs.}
+        \resumeItem{Diagnosed and fixed AV problems in classrooms and labs, including projectors, Crestron control systems, switchers, and wireless microphones.}
+        \resumeItem{Cut the repeat-call rate on the same equipment by an estimated 30\% through systematic troubleshooting.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Office Assistant, Educational Opportunity Program (EOP)}{Sep 2024 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Ran the front desk, scheduled 15+ appointments a week through a scheduling website, and kept records accurate and confidential.}
+        \resumeItem{Prepared documents, handled data entry, and kept the office organized with Microsoft Office, making office work at least 30\% more efficient.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Society of Hispanic Professional Engineers (SHPE), NJIT Chapter}{Newark, NJ}
+      {Event Coordination Director}{Mar 2024 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Planned and ran 12+ networking and professional development events, leading a team of about 10 student volunteers and tracking who handled each task.}
+        \resumeItem{Grew opening-event attendance from about 60 to 70 people up to 150, and average event attendance from 30 to 50 up to 50 to 80.}
+        \resumeItem{Pitched larger events to the e-board well ahead of time for feedback and final approval, then chose rooms and built floor plans, time-blocked agendas, and event budgets.}
+        \resumeItem{Sent agendas and presentation materials to company guests and arranged their parking, working alongside the External VP who handled outreach to companies.}
+        \resumeItem{Ran each event live and kept it on schedule, with backup plans ready for anything that went wrong.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Resident Assistant, EOP Summer Program}{Jun 2024 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Supported 150 first-year students through the 10-week EOP summer program, helping them adjust to university and residence hall life.}
+        \resumeItem{Planned program events with the RA team, including EOP alumni panels and a multicultural night.}
+        \resumeItem{Ran elections for a floor rep on each of the program's 3 floors so residents could raise concerns and suggest additions to the program, and mediated resident conflicts, reporting them to the right administrative staff.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{LinkdUp} $|$ \emph{React Native, Node.js, Express, TypeScript, Supabase} $|$ \href{https://linkdup.app}{\underline{linkdup.app}}}{Jan 2026 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Worked as the backend engineer on a five-person team building a group planning app where friends swipe on nearby places, vote, and lock in a time together.}
+            \resumeItem{Placed 2nd among the NJIT CS/IT 491 Capstone 2026 teams.}
+            \resumeItem{Integrated the Google Places and Google Calendar APIs for venue discovery and one-click event export.}
+            \resumeItem{Built with React Native, Node/Express, TypeScript, Supabase, and the Google Maps and Calendar APIs, and live at linkdup.app.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Personal Portfolio Website} $|$ \emph{React 19, Vite, GSAP, Vercel, Playwright}}{May 2026 -- Oct 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and built my personal portfolio from scratch to show recruiters my work and who I am.}
+            \resumeItem{Planned the site in phases, starting with an editorial design system (DM Serif Display headlines, purple and gold accents, and a consistent type scale) before writing any code.}
+            \resumeItem{Built it with React 19, Vite, and GSAP, and deployed it on Vercel with serverless functions.}
+            \resumeItem{Added a photo gallery that loads new photos automatically and strips location data from every image.}
+            \resumeItem{Built a dark mode that follows the visitor's system setting, with a toggle that remembers their choice.}
+            \resumeItem{Improved accessibility with contrast fixes, 44 by 44 pixel tap targets, alt text on every image, and a page lock behind the lightbox and mobile menu so keyboard and screen reader users don't get lost.}
+            \resumeItem{Wrote 34 Playwright tests that run in Chromium, Firefox, and WebKit in both light and dark mode.}
+            \resumeItem{Raised Lighthouse performance scores from 63 to 99 on mobile and from 74 to 100 on desktop.}
+            \resumeItem{Live at israelalcantara.vercel.app.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Data Analysis and Prediction App} $|$ \emph{Python, Streamlit, Scikit-learn}}{Nov 2024 -- Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Built an interactive web app with two classmates where users upload CSV data, explore it in dynamic charts, and train a Gradient Boosting Regressor model.}
+            \resumeItem{Built automated data preprocessing that handles missing values, scales numerical data, and encodes categories, so users can pick features and check model predictions in real time.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Compiler for SFort95 Language} $|$ \emph{C++, Git}}{Mar 2024 -- Apr 2024}
+          \resumeItemListStart
+            \resumeItem{Built a full compiler for the SFort95 language with lexical analysis, parsing, and interpretation, supporting declarations, expressions, and control structures based on Fortran 95.}
+            \resumeItem{Built a state-based lexical analyzer that detects tokens like identifiers and operators, reports how often each token appears, and flags unrecognized lexemes with error messages.}
+            \resumeItem{Wrote a recursive-descent parser with operator precedence and syntax checks that gives clear errors for problems like missing delimiters or undefined variables.}
+            \resumeItem{Designed an interpreter with a symbol table and runtime checks for expression accuracy, control flow, and errors like division by zero.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Organizations}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{ColorStack}, Fellow \hfill Apr 2025 -- Present \\
+      \textbf{Association of Latino Professionals For America (ALPFA)}, Member \hfill Sep 2025 -- Present \\
+      \textbf{Hispanic Association of College Computing Students (HACCS)}, Member \hfill Mar 2023 -- Present \\
+      \textbf{Association for Computing Machinery (ACM)}, Member \hfill Sep 2022 -- Present \\
+      \textbf{Society of Hispanic Professional Engineers (SHPE)}, Member \hfill Sep 2022 -- Present
+    }}
+\end{itemize}
+
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mentor U Connect}{Newark, NJ}
+      {STEM Mentorship Program Volunteer}{Mar 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Support event logistics and help run interactive STEM workshops, handling on-the-spot needs so each session runs smoothly.}
+        \resumeItem{Work directly with students to build their interest in STEM and help underrepresented youth see a path to higher education.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Queen of Peace Church}{North Arlington, NJ}
+      {Coordination of Volunteers}{Dec 2021 -- Apr 2022}
+      \resumeItemListStart
+        \resumeItem{Managed inventory and organized food donations, keeping shelves stocked and making sure food items were within their expiration dates for community members in need.}
+        \resumeItem{Coordinated volunteer schedules and tasks, and helped hand out food to individuals and families during pantry hours.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,172 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Israel Alcantara
+% Based off of: https://github.com/sb2nov/resume (Jake Gutierrez template)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = *}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{6pt}{9pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeFirstLine}[1]{\vspace{3pt}\item[]\small{#1}}
+\newcommand{\resumeLine}[1]{\vspace{-1pt}\item[]\small{#1}}
+\newcommand{\resumeSchoolGap}{\vspace{3pt}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=6pt,itemsep=0pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Israel Alcantara} \\ \vspace{1pt}
+    \small Newark, NJ\IfFileExists{phone.tex}{\input{phone.tex}\unskip}{} $|$ \href{mailto:ialcantara2003@gmail.com}{\underline{ialcantara2003@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/israel-alcantara}{\underline{linkedin.com/in/israel-alcantara}} \\
+    \href{https://github.com/iaalcantara17}{\underline{github.com/iaalcantara17}} $|$
+    \href{https://israelalcantara.vercel.app}{\underline{israelalcantara.vercel.app}}
+\end{center}
+\vspace{-8pt}
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Bilingual Best Buy Geek Squad Agent with customer-facing experience in tech support, residence life, and event service, seeking a retail sales role.}}
+\end{itemize}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Best Buy}{Secaucus, NJ}
+      {Geek Squad Agent}{Nov 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Serve as the first point of contact for customers' hardware issues, documenting each case and giving repair estimates.}
+        \resumeItem{Set up new devices, advise customers on repair or replace, and keep them updated on service-queue status.}
+        \resumeItem{Partner with other agents on complex repairs and complete Best Buy's certified training courses.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Amerivents (US Open 2026)}{Flushing, NY}
+      {Suite Runner}{Aug 2026 -- Sep 2026}
+      \resumeItemListStart
+        \resumeItem{Delivered food, drinks, and guest requests to premium suites, keeping turnaround fast in a high-volume setting.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Event Aces (FIFA World Cup 2026)}{East Rutherford, NJ}
+      {Beertender \& Suite Runner}{Jun 2026 -- Jul 2026}
+      \resumeItemListStart
+        \resumeItem{Served high volumes of guests at MetLife Stadium on game days, staying accurate and friendly under pressure.}
+        \resumeItem{Moved into a suite runner role, restocking bars with drinks, alcohol, ice, and garnishes as they ran low.}
+        \resumeItem{Handled teardown and restocking after shifts, leaving every item in its spot and the area as clean as I found it.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Amazon Web Services (AWS)}{Arlington, VA}
+      {Software Development Engineer Intern}{May 2025 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Shipped a compression feature that cut data exports by an average of 38 GB a day across 3 regions.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Adamas Building Services}{Long Branch, NJ}
+      {Beach Attendant \& Lifeguard}{Jul 2023 -- Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Guarded 3 pools and about 80 swimmers a shift with zero accidents, and set up 150+ chairs and umbrellas daily.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Leadership \& Campus Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Community Assistant, Office of Residential Life}{Jun 2025 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Supervised a 400-resident complex, enforced housing policy, and resolved conduct issues with zero major violations.}
+        \resumeItem{Planned and ran all 8 to 12 building events a semester, 2 to 3 a month, on a \$150 semester budget.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Media and Technology Support Services (MTSS), NJIT}{Newark, NJ}
+      {Delivery Technician \& Lab Technician}{Sep 2022 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Diagnosed AV issues for 100+ lectures a year, cutting repeat calls on the same equipment by an estimated 30\%.}
+        \resumeItem{Standardized setup and readiness checks with a team of 5 technicians, raising estimated equipment reliability by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Office Assistant, Educational Opportunity Program (EOP)}{Sep 2024 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Ran the front desk, scheduled 15+ appointments a week, and made office work at least 30\% more efficient.}
+        \resumeItem{Kept student records accurate and confidential.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Society of Hispanic Professional Engineers (SHPE), NJIT Chapter}{Newark, NJ}
+      {Event Coordination Director}{Mar 2024 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Grew opening-event attendance to 150 from about 60 to 70, and average attendance to 50 to 80 from 30 to 50.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Resident Assistant, EOP Summer Program}{Jun 2024 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Helped 150 first-year students settle into residence hall life over 10 weeks, mediating and reporting conflicts.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Customer \& Sales}{: Customer Service, Technical Support, Troubleshooting, Device Setup, Microsoft Office (Excel)} \\
+      \textbf{Languages}{: English and Spanish (fluent)}
+    }}
+\end{itemize}
+
+\end{document}
